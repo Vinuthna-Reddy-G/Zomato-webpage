@@ -30,11 +30,34 @@ body{
     );
     color: #fff;
     border: none;
-    border-radius: 7px;
+    border-radius: 5px;
     padding: 12px;
     font-weight: 700px;
 }
 
-.nav__item:hover{
+.nav__item:hover {
+    background-image: linear-gradient(to right,
+    #dd2476 0%,
+    #ff512f 51%,
+    #dd2476 100%
+    );
     cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .navbar{
+        justify-content: space-between;
+        padding: 10px 30px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .navbar__brand{
+        width: 150px;
+    }
+
+    .nav__item{
+        padding: 20px;
+        font-size: 17px;
+    }
 }
